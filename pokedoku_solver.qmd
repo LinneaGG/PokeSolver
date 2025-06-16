@@ -1,0 +1,145 @@
+---
+title: "pokedoku_solver.v2"
+subtitle: "RaukR 2025 Project"
+author: "Alberto M Arenas"
+description: "This is a program made to solve the Pokédoku puzzle (https://pokedoku.com/) using data downloaded from the PokeAPI database (https://pokeapi.co)" 
+format: html
+---
+
+# Pokédoku Solver
+
+Pokémon is one of the most successful franchises in the entire world, based on videogames, trading cards, anime, manga, and movies. The Pokédoku puzzle is a game that combines Pokémon with Sudoku-like rules, where you have to fill a grid with Pokémon names based on different hints regarding their types, regions of origin, whether they are legendary or fossil Pokémon... etc. This program will aim to give a list of solutions to the daily Pokédoku based on the hints provided.
+
+
+## 1. Downloading Pokémon data from PokéAPI
+
+
+```{r}
+library(httr)
+library(jsonlite)
+library(tibble)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(tidyr)
+
+# PRE-DEFINED LISTS OF POKÉMON (NOT A DIRECT POKÉAPI PARAMETER) 
+
+fossil_pokemon <- c(
+  "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl", "aerodactyl-mega",
+  "lileep", "cradily", "anorith", "armaldo",
+  "cranidos", "rampardos", "shieldon", "bastiodon",
+  "tirtouga", "carracosta", "archen", "archeops",
+  "tyrunt", "tyrantrum", "amaura", "aurorus",
+  "dracozolt", "arctozolt", "dracovish", "arctovish")
+
+hisuian_pokemon <- c(
+  "voltorb-hisui",
+  "electrode-hisui",
+  "growlithe-hisui",
+  "arcanine-hisui",
+  "lilligant-hisui",
+  "basculin-white-striped",
+  "zorua-hisui",
+  "zoroark-hisui",
+  "braviary-hisui",
+  "samurott-hisui",
+  "decidueye-hisui",
+  "qwilfish-hisui",
+  "sliggoo-hisui",
+  "goodra-hisui",
+  "overqwil",
+  "avalugg-hisui",
+  "kleavor",
+  "ursaluna",
+  "wyrdeer",
+  "basculegion-male",
+  "basculegion-female",
+  "enamorus-encarnate",
+  "enamorus-therian",
+  "palkia-origin",
+  "dialga-origin"
+)
+
+
+# FUNCTION TO EXTRACT NAMES OF ALL POKÉMON
+
+get_all_pokemon_names <- function() {
+  url <- "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
+  res <- httr::GET(url)
+  
+  if (res$status_code != 200) {
+    stop("Error fetching data from API")
+  }
+  
+  data <- jsonlite::fromJSON(httr::content(res, as = "text", encoding = "UTF-8"))
+  
+  # data$results es un dataframe con columnas: name y url
+  pokemon_names <- data$results$name
+  return(pokemon_names)
+}
+
+
+## FUNTION TO OBTAIN DATA FROM A GIVEN POKÉMON
+
+catch_pokemon <- function(name) {
+  tryCatch({
+    url <- paste0("https://pokeapi.co/api/v2/pokemon/", tolower(name))
+    resp <- GET(url)
+    if (status_code(resp) != 200) return(NULL)
+    
+    poke_data <- fromJSON(content(resp, "text", encoding = "UTF-8"))
+    types <- poke_data$types$type$name
+    Type1 <- types[1]
+    Type2 <- if (length(types) > 1) types[2] else NA_character_
+    species_url <- poke_data$species$url
+    species_resp <- GET(species_url)
+    species_data <- fromJSON(content(species_resp, "text", encoding = "UTF-8"))
+    
+    region_map <- c(
+      "generation-i" = "kanto", "generation-ii" = "johto",
+      "generation-iii" = "hoenn", "generation-iv" = "sinnoh",
+      "generation-v" = "unova", "generation-vi" = "kalos",
+      "generation-vii" = "alola", "generation-viii" = "galar",
+      "generation-ix" = "paldea"
+    )
+    
+    tibble(
+      Name = tolower(name),
+      Type1 = Type1,
+      Type2 = Type2,
+      Region = ifelse(tolower(name) %in% hisuian_pokemon, "hisui", region_map[[species_data$generation$name]]),
+      Legendary = species_data$is_legendary,
+      Mythical = species_data$is_mythical,
+      Baby = species_data$is_baby,
+      Fossil = ifelse(tolower(name) %in% fossil_pokemon, TRUE, FALSE),
+      Mega = grepl("-mega", tolower(name)),
+      Gmax = grepl("-gmax", tolower(name)),
+      `Mono-type` = is.na(Type2),
+      `Dual-type` = !is.na(Type2)
+    )
+  }, error = function(e) {
+    message(paste("Error with", name, ":", e$message))
+    return(NULL)
+  })
+}
+```
+
+
+```{r}
+# Obtaining all pokémon_names
+
+all_names <- get_all_pokemon_names()
+
+
+# Obtaining all data for pokémon (OBS! IT TAKES A LONG TIME!!)
+
+all_pokemon <- map(all_names, function(name) {
+  Sys.sleep(0.5)  # avoid getting rate-limited
+  get_pokemon2(name)
+})
+
+all_poke_df <- bind_rows(all_pokemon)
+
+
+```

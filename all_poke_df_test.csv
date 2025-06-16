@@ -1,0 +1,1026 @@
+"","Name","Type1","Type2","Region","Legendary","Mythical","Baby","Fossil","Mono-type"
+"1","Bulbasaur","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"2","Ivysaur","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"3","Venusaur","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"4","Charmander","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"5","Charmeleon","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"6","Charizard","fire","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"7","Squirtle","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"8","Wartortle","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"9","Blastoise","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"10","Caterpie","bug",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"11","Metapod","bug",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"12","Butterfree","bug","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"13","Weedle","bug","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"14","Kakuna","bug","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"15","Beedrill","bug","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"16","Pidgey","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"17","Pidgeotto","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"18","Pidgeot","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"19","Rattata","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"20","Raticate","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"21","Spearow","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"22","Fearow","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"23","Ekans","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"24","Arbok","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"25","Pikachu","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"26","Raichu","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"27","Sandshrew","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"28","Sandslash","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"29","Nidoran-F","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"30","Nidorina","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"31","Nidoqueen","poison","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"32","Nidoran-M","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"33","Nidorino","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"34","Nidoking","poison","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"35","Clefairy","fairy",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"36","Clefable","fairy",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"37","Vulpix","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"38","Ninetales","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"39","Jigglypuff","normal","fairy","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"40","Wigglytuff","normal","fairy","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"41","Zubat","poison","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"42","Golbat","poison","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"43","Oddish","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"44","Gloom","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"45","Vileplume","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"46","Paras","bug","grass","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"47","Parasect","bug","grass","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"48","Venonat","bug","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"49","Venomoth","bug","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"50","Diglett","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"51","Dugtrio","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"52","Meowth","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"53","Persian","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"54","Psyduck","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"55","Golduck","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"56","Mankey","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"57","Primeape","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"58","Growlithe","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"59","Arcanine","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"60","Poliwag","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"61","Poliwhirl","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"62","Poliwrath","water","fighting","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"63","Abra","psychic",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"64","Kadabra","psychic",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"65","Alakazam","psychic",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"66","Machop","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"67","Machoke","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"68","Machamp","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"69","Bellsprout","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"70","Weepinbell","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"71","Victreebel","grass","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"72","Tentacool","water","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"73","Tentacruel","water","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"74","Geodude","rock","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"75","Graveler","rock","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"76","Golem","rock","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"77","Ponyta","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"78","Rapidash","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"79","Slowpoke","water","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"80","Slowbro","water","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"81","Magnemite","electric","steel","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"82","Magneton","electric","steel","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"83","Farfetchd","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"84","Doduo","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"85","Dodrio","normal","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"86","Seel","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"87","Dewgong","water","ice","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"88","Grimer","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"89","Muk","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"90","Shellder","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"91","Cloyster","water","ice","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"92","Gastly","ghost","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"93","Haunter","ghost","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"94","Gengar","ghost","poison","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"95","Onix","rock","ground","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"96","Drowzee","psychic",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"97","Hypno","psychic",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"98","Krabby","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"99","Kingler","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"100","Voltorb","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"101","Electrode","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"102","Exeggcute","grass","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"103","Exeggutor","grass","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"104","Cubone","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"105","Marowak","ground",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"106","Hitmonlee","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"107","Hitmonchan","fighting",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"108","Lickitung","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"109","Koffing","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"110","Weezing","poison",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"111","Rhyhorn","ground","rock","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"112","Rhydon","ground","rock","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"113","Chansey","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"114","Tangela","grass",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"115","Kangaskhan","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"116","Horsea","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"117","Seadra","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"118","Goldeen","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"119","Seaking","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"120","Staryu","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"121","Starmie","water","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"122","Mr-Mime","psychic","fairy","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"123","Scyther","bug","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"124","Jynx","ice","psychic","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"125","Electabuzz","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"126","Magmar","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"127","Pinsir","bug",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"128","Tauros","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"129","Magikarp","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"130","Gyarados","water","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"131","Lapras","water","ice","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"132","Ditto","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"133","Eevee","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"134","Vaporeon","water",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"135","Jolteon","electric",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"136","Flareon","fire",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"137","Porygon","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"138","Omanyte","rock","water","kanto",FALSE,FALSE,FALSE,TRUE,FALSE
+"139","Omastar","rock","water","kanto",FALSE,FALSE,FALSE,TRUE,FALSE
+"140","Kabuto","rock","water","kanto",FALSE,FALSE,FALSE,TRUE,FALSE
+"141","Kabutops","rock","water","kanto",FALSE,FALSE,FALSE,TRUE,FALSE
+"142","Aerodactyl","rock","flying","kanto",FALSE,FALSE,FALSE,TRUE,FALSE
+"143","Snorlax","normal",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"144","Articuno","ice","flying","kanto",TRUE,FALSE,FALSE,FALSE,FALSE
+"145","Zapdos","electric","flying","kanto",TRUE,FALSE,FALSE,FALSE,FALSE
+"146","Moltres","fire","flying","kanto",TRUE,FALSE,FALSE,FALSE,FALSE
+"147","Dratini","dragon",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"148","Dragonair","dragon",NA,"kanto",FALSE,FALSE,FALSE,FALSE,TRUE
+"149","Dragonite","dragon","flying","kanto",FALSE,FALSE,FALSE,FALSE,FALSE
+"150","Mewtwo","psychic",NA,"kanto",TRUE,FALSE,FALSE,FALSE,TRUE
+"151","Mew","psychic",NA,"kanto",FALSE,TRUE,FALSE,FALSE,TRUE
+"152","Chikorita","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"153","Bayleef","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"154","Meganium","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"155","Cyndaquil","fire",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"156","Quilava","fire",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"157","Typhlosion","fire",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"158","Totodile","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"159","Croconaw","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"160","Feraligatr","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"161","Sentret","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"162","Furret","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"163","Hoothoot","normal","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"164","Noctowl","normal","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"165","Ledyba","bug","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"166","Ledian","bug","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"167","Spinarak","bug","poison","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"168","Ariados","bug","poison","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"169","Crobat","poison","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"170","Chinchou","water","electric","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"171","Lanturn","water","electric","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"172","Pichu","electric",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"173","Cleffa","fairy",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"174","Igglybuff","normal","fairy","johto",FALSE,FALSE,TRUE,FALSE,FALSE
+"175","Togepi","fairy",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"176","Togetic","fairy","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"177","Natu","psychic","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"178","Xatu","psychic","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"179","Mareep","electric",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"180","Flaaffy","electric",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"181","Ampharos","electric",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"182","Bellossom","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"183","Marill","water","fairy","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"184","Azumarill","water","fairy","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"185","Sudowoodo","rock",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"186","Politoed","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"187","Hoppip","grass","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"188","Skiploom","grass","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"189","Jumpluff","grass","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"190","Aipom","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"191","Sunkern","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"192","Sunflora","grass",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"193","Yanma","bug","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"194","Wooper","water","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"195","Quagsire","water","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"196","Espeon","psychic",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"197","Umbreon","dark",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"198","Murkrow","dark","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"199","Slowking","water","psychic","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"200","Misdreavus","ghost",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"201","Unown","psychic",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"202","Wobbuffet","psychic",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"203","Girafarig","normal","psychic","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"204","Pineco","bug",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"205","Forretress","bug","steel","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"206","Dunsparce","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"207","Gligar","ground","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"208","Steelix","steel","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"209","Snubbull","fairy",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"210","Granbull","fairy",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"211","Qwilfish","water","poison","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"212","Scizor","bug","steel","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"213","Shuckle","bug","rock","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"214","Heracross","bug","fighting","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"215","Sneasel","dark","ice","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"216","Teddiursa","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"217","Ursaring","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"218","Slugma","fire",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"219","Magcargo","fire","rock","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"220","Swinub","ice","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"221","Piloswine","ice","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"222","Corsola","water","rock","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"223","Remoraid","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"224","Octillery","water",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"225","Delibird","ice","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"226","Mantine","water","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"227","Skarmory","steel","flying","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"228","Houndour","dark","fire","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"229","Houndoom","dark","fire","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"230","Kingdra","water","dragon","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"231","Phanpy","ground",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"232","Donphan","ground",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"233","Porygon2","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"234","Stantler","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"235","Smeargle","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"236","Tyrogue","fighting",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"237","Hitmontop","fighting",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"238","Smoochum","ice","psychic","johto",FALSE,FALSE,TRUE,FALSE,FALSE
+"239","Elekid","electric",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"240","Magby","fire",NA,"johto",FALSE,FALSE,TRUE,FALSE,TRUE
+"241","Miltank","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"242","Blissey","normal",NA,"johto",FALSE,FALSE,FALSE,FALSE,TRUE
+"243","Raikou","electric",NA,"johto",TRUE,FALSE,FALSE,FALSE,TRUE
+"244","Entei","fire",NA,"johto",TRUE,FALSE,FALSE,FALSE,TRUE
+"245","Suicune","water",NA,"johto",TRUE,FALSE,FALSE,FALSE,TRUE
+"246","Larvitar","rock","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"247","Pupitar","rock","ground","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"248","Tyranitar","rock","dark","johto",FALSE,FALSE,FALSE,FALSE,FALSE
+"249","Lugia","psychic","flying","johto",TRUE,FALSE,FALSE,FALSE,FALSE
+"250","Ho-Oh","fire","flying","johto",TRUE,FALSE,FALSE,FALSE,FALSE
+"251","Celebi","psychic","grass","johto",FALSE,TRUE,FALSE,FALSE,FALSE
+"252","Treecko","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"253","Grovyle","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"254","Sceptile","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"255","Torchic","fire",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"256","Combusken","fire","fighting","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"257","Blaziken","fire","fighting","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"258","Mudkip","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"259","Marshtomp","water","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"260","Swampert","water","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"261","Poochyena","dark",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"262","Mightyena","dark",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"263","Zigzagoon","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"264","Linoone","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"265","Wurmple","bug",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"266","Silcoon","bug",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"267","Beautifly","bug","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"268","Cascoon","bug",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"269","Dustox","bug","poison","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"270","Lotad","water","grass","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"271","Lombre","water","grass","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"272","Ludicolo","water","grass","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"273","Seedot","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"274","Nuzleaf","grass","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"275","Shiftry","grass","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"276","Taillow","normal","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"277","Swellow","normal","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"278","Wingull","water","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"279","Pelipper","water","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"280","Ralts","psychic","fairy","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"281","Kirlia","psychic","fairy","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"282","Gardevoir","psychic","fairy","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"283","Surskit","bug","water","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"284","Masquerain","bug","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"285","Shroomish","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"286","Breloom","grass","fighting","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"287","Slakoth","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"288","Vigoroth","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"289","Slaking","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"290","Nincada","bug","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"291","Ninjask","bug","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"292","Shedinja","bug","ghost","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"293","Whismur","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"294","Loudred","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"295","Exploud","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"296","Makuhita","fighting",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"297","Hariyama","fighting",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"298","Azurill","normal","fairy","hoenn",FALSE,FALSE,TRUE,FALSE,FALSE
+"299","Nosepass","rock",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"300","Skitty","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"301","Delcatty","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"302","Sableye","dark","ghost","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"303","Mawile","steel","fairy","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"304","Aron","steel","rock","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"305","Lairon","steel","rock","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"306","Aggron","steel","rock","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"307","Meditite","fighting","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"308","Medicham","fighting","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"309","Electrike","electric",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"310","Manectric","electric",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"311","Plusle","electric",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"312","Minun","electric",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"313","Volbeat","bug",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"314","Illumise","bug",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"315","Roselia","grass","poison","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"316","Gulpin","poison",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"317","Swalot","poison",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"318","Carvanha","water","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"319","Sharpedo","water","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"320","Wailmer","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"321","Wailord","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"322","Numel","fire","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"323","Camerupt","fire","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"324","Torkoal","fire",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"325","Spoink","psychic",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"326","Grumpig","psychic",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"327","Spinda","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"328","Trapinch","ground",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"329","Vibrava","ground","dragon","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"330","Flygon","ground","dragon","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"331","Cacnea","grass",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"332","Cacturne","grass","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"333","Swablu","normal","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"334","Altaria","dragon","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"335","Zangoose","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"336","Seviper","poison",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"337","Lunatone","rock","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"338","Solrock","rock","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"339","Barboach","water","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"340","Whiscash","water","ground","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"341","Corphish","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"342","Crawdaunt","water","dark","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"343","Baltoy","ground","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"344","Claydol","ground","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"345","Lileep","rock","grass","hoenn",FALSE,FALSE,FALSE,TRUE,FALSE
+"346","Cradily","rock","grass","hoenn",FALSE,FALSE,FALSE,TRUE,FALSE
+"347","Anorith","rock","bug","hoenn",FALSE,FALSE,FALSE,TRUE,FALSE
+"348","Armaldo","rock","bug","hoenn",FALSE,FALSE,FALSE,TRUE,FALSE
+"349","Feebas","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"350","Milotic","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"351","Castform","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"352","Kecleon","normal",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"353","Shuppet","ghost",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"354","Banette","ghost",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"355","Duskull","ghost",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"356","Dusclops","ghost",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"357","Tropius","grass","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"358","Chimecho","psychic",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"359","Absol","dark",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"360","Wynaut","psychic",NA,"hoenn",FALSE,FALSE,TRUE,FALSE,TRUE
+"361","Snorunt","ice",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"362","Glalie","ice",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"363","Spheal","ice","water","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"364","Sealeo","ice","water","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"365","Walrein","ice","water","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"366","Clamperl","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"367","Huntail","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"368","Gorebyss","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"369","Relicanth","water","rock","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"370","Luvdisc","water",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"371","Bagon","dragon",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"372","Shelgon","dragon",NA,"hoenn",FALSE,FALSE,FALSE,FALSE,TRUE
+"373","Salamence","dragon","flying","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"374","Beldum","steel","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"375","Metang","steel","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"376","Metagross","steel","psychic","hoenn",FALSE,FALSE,FALSE,FALSE,FALSE
+"377","Regirock","rock",NA,"hoenn",TRUE,FALSE,FALSE,FALSE,TRUE
+"378","Regice","ice",NA,"hoenn",TRUE,FALSE,FALSE,FALSE,TRUE
+"379","Registeel","steel",NA,"hoenn",TRUE,FALSE,FALSE,FALSE,TRUE
+"380","Latias","dragon","psychic","hoenn",TRUE,FALSE,FALSE,FALSE,FALSE
+"381","Latios","dragon","psychic","hoenn",TRUE,FALSE,FALSE,FALSE,FALSE
+"382","Kyogre","water",NA,"hoenn",TRUE,FALSE,FALSE,FALSE,TRUE
+"383","Groudon","ground",NA,"hoenn",TRUE,FALSE,FALSE,FALSE,TRUE
+"384","Rayquaza","dragon","flying","hoenn",TRUE,FALSE,FALSE,FALSE,FALSE
+"385","Jirachi","steel","psychic","hoenn",FALSE,TRUE,FALSE,FALSE,FALSE
+"386","Deoxys-Normal","psychic",NA,"hoenn",FALSE,TRUE,FALSE,FALSE,TRUE
+"387","Turtwig","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"388","Grotle","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"389","Torterra","grass","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"390","Chimchar","fire",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"391","Monferno","fire","fighting","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"392","Infernape","fire","fighting","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"393","Piplup","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"394","Prinplup","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"395","Empoleon","water","steel","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"396","Starly","normal","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"397","Staravia","normal","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"398","Staraptor","normal","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"399","Bidoof","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"400","Bibarel","normal","water","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"401","Kricketot","bug",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"402","Kricketune","bug",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"403","Shinx","electric",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"404","Luxio","electric",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"405","Luxray","electric",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"406","Budew","grass","poison","sinnoh",FALSE,FALSE,TRUE,FALSE,FALSE
+"407","Roserade","grass","poison","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"408","Cranidos","rock",NA,"sinnoh",FALSE,FALSE,FALSE,TRUE,TRUE
+"409","Rampardos","rock",NA,"sinnoh",FALSE,FALSE,FALSE,TRUE,TRUE
+"410","Shieldon","rock","steel","sinnoh",FALSE,FALSE,FALSE,TRUE,FALSE
+"411","Bastiodon","rock","steel","sinnoh",FALSE,FALSE,FALSE,TRUE,FALSE
+"412","Burmy","bug",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"413","Wormadam-Plant","bug","grass","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"414","Mothim","bug","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"415","Combee","bug","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"416","Vespiquen","bug","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"417","Pachirisu","electric",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"418","Buizel","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"419","Floatzel","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"420","Cherubi","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"421","Cherrim","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"422","Shellos","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"423","Gastrodon","water","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"424","Ambipom","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"425","Drifloon","ghost","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"426","Drifblim","ghost","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"427","Buneary","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"428","Lopunny","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"429","Mismagius","ghost",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"430","Honchkrow","dark","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"431","Glameow","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"432","Purugly","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"433","Chingling","psychic",NA,"sinnoh",FALSE,FALSE,TRUE,FALSE,TRUE
+"434","Stunky","poison","dark","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"435","Skuntank","poison","dark","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"436","Bronzor","steel","psychic","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"437","Bronzong","steel","psychic","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"438","Bonsly","rock",NA,"sinnoh",FALSE,FALSE,TRUE,FALSE,TRUE
+"439","Mime-Jr","psychic","fairy","sinnoh",FALSE,FALSE,TRUE,FALSE,FALSE
+"440","Happiny","normal",NA,"sinnoh",FALSE,FALSE,TRUE,FALSE,TRUE
+"441","Chatot","normal","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"442","Spiritomb","ghost","dark","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"443","Gible","dragon","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"444","Gabite","dragon","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"445","Garchomp","dragon","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"446","Munchlax","normal",NA,"sinnoh",FALSE,FALSE,TRUE,FALSE,TRUE
+"447","Riolu","fighting",NA,"sinnoh",FALSE,FALSE,TRUE,FALSE,TRUE
+"448","Lucario","fighting","steel","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"449","Hippopotas","ground",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"450","Hippowdon","ground",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"451","Skorupi","poison","bug","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"452","Drapion","poison","dark","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"453","Croagunk","poison","fighting","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"454","Toxicroak","poison","fighting","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"455","Carnivine","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"456","Finneon","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"457","Lumineon","water",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"458","Mantyke","water","flying","sinnoh",FALSE,FALSE,TRUE,FALSE,FALSE
+"459","Snover","grass","ice","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"460","Abomasnow","grass","ice","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"461","Weavile","dark","ice","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"462","Magnezone","electric","steel","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"463","Lickilicky","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"464","Rhyperior","ground","rock","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"465","Tangrowth","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"466","Electivire","electric",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"467","Magmortar","fire",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"468","Togekiss","fairy","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"469","Yanmega","bug","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"470","Leafeon","grass",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"471","Glaceon","ice",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"472","Gliscor","ground","flying","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"473","Mamoswine","ice","ground","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"474","Porygon-Z","normal",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"475","Gallade","psychic","fighting","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"476","Probopass","rock","steel","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"477","Dusknoir","ghost",NA,"sinnoh",FALSE,FALSE,FALSE,FALSE,TRUE
+"478","Froslass","ice","ghost","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"479","Rotom","electric","ghost","sinnoh",FALSE,FALSE,FALSE,FALSE,FALSE
+"480","Uxie","psychic",NA,"sinnoh",TRUE,FALSE,FALSE,FALSE,TRUE
+"481","Mesprit","psychic",NA,"sinnoh",TRUE,FALSE,FALSE,FALSE,TRUE
+"482","Azelf","psychic",NA,"sinnoh",TRUE,FALSE,FALSE,FALSE,TRUE
+"483","Dialga","steel","dragon","sinnoh",TRUE,FALSE,FALSE,FALSE,FALSE
+"484","Palkia","water","dragon","sinnoh",TRUE,FALSE,FALSE,FALSE,FALSE
+"485","Heatran","fire","steel","sinnoh",TRUE,FALSE,FALSE,FALSE,FALSE
+"486","Regigigas","normal",NA,"sinnoh",TRUE,FALSE,FALSE,FALSE,TRUE
+"487","Giratina-Altered","ghost","dragon","sinnoh",TRUE,FALSE,FALSE,FALSE,FALSE
+"488","Cresselia","psychic",NA,"sinnoh",TRUE,FALSE,FALSE,FALSE,TRUE
+"489","Phione","water",NA,"sinnoh",FALSE,TRUE,FALSE,FALSE,TRUE
+"490","Manaphy","water",NA,"sinnoh",FALSE,TRUE,FALSE,FALSE,TRUE
+"491","Darkrai","dark",NA,"sinnoh",FALSE,TRUE,FALSE,FALSE,TRUE
+"492","Shaymin-Land","grass",NA,"sinnoh",FALSE,TRUE,FALSE,FALSE,TRUE
+"493","Arceus","normal",NA,"sinnoh",FALSE,TRUE,FALSE,FALSE,TRUE
+"494","Victini","psychic","fire","unova",FALSE,TRUE,FALSE,FALSE,FALSE
+"495","Snivy","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"496","Servine","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"497","Serperior","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"498","Tepig","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"499","Pignite","fire","fighting","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"500","Emboar","fire","fighting","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"501","Oshawott","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"502","Dewott","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"503","Samurott","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"504","Patrat","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"505","Watchog","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"506","Lillipup","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"507","Herdier","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"508","Stoutland","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"509","Purrloin","dark",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"510","Liepard","dark",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"511","Pansage","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"512","Simisage","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"513","Pansear","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"514","Simisear","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"515","Panpour","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"516","Simipour","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"517","Munna","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"518","Musharna","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"519","Pidove","normal","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"520","Tranquill","normal","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"521","Unfezant","normal","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"522","Blitzle","electric",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"523","Zebstrika","electric",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"524","Roggenrola","rock",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"525","Boldore","rock",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"526","Gigalith","rock",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"527","Woobat","psychic","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"528","Swoobat","psychic","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"529","Drilbur","ground",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"530","Excadrill","ground","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"531","Audino","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"532","Timburr","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"533","Gurdurr","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"534","Conkeldurr","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"535","Tympole","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"536","Palpitoad","water","ground","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"537","Seismitoad","water","ground","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"538","Throh","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"539","Sawk","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"540","Sewaddle","bug","grass","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"541","Swadloon","bug","grass","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"542","Leavanny","bug","grass","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"543","Venipede","bug","poison","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"544","Whirlipede","bug","poison","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"545","Scolipede","bug","poison","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"546","Cottonee","grass","fairy","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"547","Whimsicott","grass","fairy","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"548","Petilil","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"549","Lilligant","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"550","Basculin-Red-Striped","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"551","Sandile","ground","dark","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"552","Krokorok","ground","dark","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"553","Krookodile","ground","dark","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"554","Darumaka","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"555","Darmanitan-Standard","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"556","Maractus","grass",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"557","Dwebble","bug","rock","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"558","Crustle","bug","rock","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"559","Scraggy","dark","fighting","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"560","Scrafty","dark","fighting","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"561","Sigilyph","psychic","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"562","Yamask","ghost",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"563","Cofagrigus","ghost",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"564","Tirtouga","water","rock","unova",FALSE,FALSE,FALSE,TRUE,FALSE
+"565","Carracosta","water","rock","unova",FALSE,FALSE,FALSE,TRUE,FALSE
+"566","Archen","rock","flying","unova",FALSE,FALSE,FALSE,TRUE,FALSE
+"567","Archeops","rock","flying","unova",FALSE,FALSE,FALSE,TRUE,FALSE
+"568","Trubbish","poison",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"569","Garbodor","poison",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"570","Zorua","dark",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"571","Zoroark","dark",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"572","Minccino","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"573","Cinccino","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"574","Gothita","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"575","Gothorita","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"576","Gothitelle","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"577","Solosis","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"578","Duosion","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"579","Reuniclus","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"580","Ducklett","water","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"581","Swanna","water","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"582","Vanillite","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"583","Vanillish","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"584","Vanilluxe","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"585","Deerling","normal","grass","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"586","Sawsbuck","normal","grass","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"587","Emolga","electric","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"588","Karrablast","bug",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"589","Escavalier","bug","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"590","Foongus","grass","poison","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"591","Amoonguss","grass","poison","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"592","Frillish","water","ghost","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"593","Jellicent","water","ghost","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"594","Alomomola","water",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"595","Joltik","bug","electric","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"596","Galvantula","bug","electric","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"597","Ferroseed","grass","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"598","Ferrothorn","grass","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"599","Klink","steel",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"600","Klang","steel",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"601","Klinklang","steel",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"602","Tynamo","electric",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"603","Eelektrik","electric",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"604","Eelektross","electric",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"605","Elgyem","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"606","Beheeyem","psychic",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"607","Litwick","ghost","fire","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"608","Lampent","ghost","fire","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"609","Chandelure","ghost","fire","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"610","Axew","dragon",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"611","Fraxure","dragon",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"612","Haxorus","dragon",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"613","Cubchoo","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"614","Beartic","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"615","Cryogonal","ice",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"616","Shelmet","bug",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"617","Accelgor","bug",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"618","Stunfisk","ground","electric","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"619","Mienfoo","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"620","Mienshao","fighting",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"621","Druddigon","dragon",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"622","Golett","ground","ghost","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"623","Golurk","ground","ghost","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"624","Pawniard","dark","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"625","Bisharp","dark","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"626","Bouffalant","normal",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"627","Rufflet","normal","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"628","Braviary","normal","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"629","Vullaby","dark","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"630","Mandibuzz","dark","flying","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"631","Heatmor","fire",NA,"unova",FALSE,FALSE,FALSE,FALSE,TRUE
+"632","Durant","bug","steel","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"633","Deino","dark","dragon","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"634","Zweilous","dark","dragon","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"635","Hydreigon","dark","dragon","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"636","Larvesta","bug","fire","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"637","Volcarona","bug","fire","unova",FALSE,FALSE,FALSE,FALSE,FALSE
+"638","Cobalion","steel","fighting","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"639","Terrakion","rock","fighting","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"640","Virizion","grass","fighting","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"641","Tornadus-Incarnate","flying",NA,"unova",TRUE,FALSE,FALSE,FALSE,TRUE
+"642","Thundurus-Incarnate","electric","flying","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"643","Reshiram","dragon","fire","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"644","Zekrom","dragon","electric","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"645","Landorus-Incarnate","ground","flying","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"646","Kyurem","dragon","ice","unova",TRUE,FALSE,FALSE,FALSE,FALSE
+"647","Keldeo-Ordinary","water","fighting","unova",FALSE,TRUE,FALSE,FALSE,FALSE
+"648","Meloetta-Aria","normal","psychic","unova",FALSE,TRUE,FALSE,FALSE,FALSE
+"649","Genesect","bug","steel","unova",FALSE,TRUE,FALSE,FALSE,FALSE
+"650","Chespin","grass",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"651","Quilladin","grass",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"652","Chesnaught","grass","fighting","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"653","Fennekin","fire",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"654","Braixen","fire",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"655","Delphox","fire","psychic","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"656","Froakie","water",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"657","Frogadier","water",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"658","Greninja","water","dark","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"659","Bunnelby","normal",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"660","Diggersby","normal","ground","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"661","Fletchling","normal","flying","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"662","Fletchinder","fire","flying","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"663","Talonflame","fire","flying","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"664","Scatterbug","bug",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"665","Spewpa","bug",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"666","Vivillon","bug","flying","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"667","Litleo","fire","normal","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"668","Pyroar","fire","normal","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"669","Flabebe","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"670","Floette","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"671","Florges","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"672","Skiddo","grass",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"673","Gogoat","grass",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"674","Pancham","fighting",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"675","Pangoro","fighting","dark","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"676","Furfrou","normal",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"677","Espurr","psychic",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"678","Meowstic-Male","psychic",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"679","Honedge","steel","ghost","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"680","Doublade","steel","ghost","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"681","Aegislash-Shield","steel","ghost","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"682","Spritzee","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"683","Aromatisse","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"684","Swirlix","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"685","Slurpuff","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"686","Inkay","dark","psychic","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"687","Malamar","dark","psychic","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"688","Binacle","rock","water","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"689","Barbaracle","rock","water","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"690","Skrelp","poison","water","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"691","Dragalge","poison","dragon","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"692","Clauncher","water",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"693","Clawitzer","water",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"694","Helioptile","electric","normal","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"695","Heliolisk","electric","normal","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"696","Tyrunt","rock","dragon","kalos",FALSE,FALSE,FALSE,TRUE,FALSE
+"697","Tyrantrum","rock","dragon","kalos",FALSE,FALSE,FALSE,TRUE,FALSE
+"698","Amaura","rock","ice","kalos",FALSE,FALSE,FALSE,TRUE,FALSE
+"699","Aurorus","rock","ice","kalos",FALSE,FALSE,FALSE,TRUE,FALSE
+"700","Sylveon","fairy",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"701","Hawlucha","fighting","flying","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"702","Dedenne","electric","fairy","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"703","Carbink","rock","fairy","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"704","Goomy","dragon",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"705","Sliggoo","dragon",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"706","Goodra","dragon",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"707","Klefki","steel","fairy","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"708","Phantump","ghost","grass","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"709","Trevenant","ghost","grass","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"710","Pumpkaboo-Average","ghost","grass","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"711","Gourgeist-Average","ghost","grass","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"712","Bergmite","ice",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"713","Avalugg","ice",NA,"kalos",FALSE,FALSE,FALSE,FALSE,TRUE
+"714","Noibat","flying","dragon","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"715","Noivern","flying","dragon","kalos",FALSE,FALSE,FALSE,FALSE,FALSE
+"716","Xerneas","fairy",NA,"kalos",TRUE,FALSE,FALSE,FALSE,TRUE
+"717","Yveltal","dark","flying","kalos",TRUE,FALSE,FALSE,FALSE,FALSE
+"718","Zygarde-50","dragon","ground","kalos",TRUE,FALSE,FALSE,FALSE,FALSE
+"719","Diancie","rock","fairy","kalos",FALSE,TRUE,FALSE,FALSE,FALSE
+"720","Hoopa","psychic","ghost","kalos",FALSE,TRUE,FALSE,FALSE,FALSE
+"721","Volcanion","fire","water","kalos",FALSE,TRUE,FALSE,FALSE,FALSE
+"722","Rowlet","grass","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"723","Dartrix","grass","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"724","Decidueye","grass","ghost","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"725","Litten","fire",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"726","Torracat","fire",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"727","Incineroar","fire","dark","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"728","Popplio","water",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"729","Brionne","water",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"730","Primarina","water","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"731","Pikipek","normal","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"732","Trumbeak","normal","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"733","Toucannon","normal","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"734","Yungoos","normal",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"735","Gumshoos","normal",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"736","Grubbin","bug",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"737","Charjabug","bug","electric","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"738","Vikavolt","bug","electric","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"739","Crabrawler","fighting",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"740","Crabominable","fighting","ice","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"741","Oricorio-Baile","fire","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"742","Cutiefly","bug","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"743","Ribombee","bug","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"744","Rockruff","rock",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"745","Lycanroc-Midday","rock",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"746","Wishiwashi-Solo","water",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"747","Mareanie","poison","water","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"748","Toxapex","poison","water","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"749","Mudbray","ground",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"750","Mudsdale","ground",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"751","Dewpider","water","bug","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"752","Araquanid","water","bug","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"753","Fomantis","grass",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"754","Lurantis","grass",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"755","Morelull","grass","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"756","Shiinotic","grass","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"757","Salandit","poison","fire","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"758","Salazzle","poison","fire","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"759","Stufful","normal","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"760","Bewear","normal","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"761","Bounsweet","grass",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"762","Steenee","grass",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"763","Tsareena","grass",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"764","Comfey","fairy",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"765","Oranguru","normal","psychic","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"766","Passimian","fighting",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"767","Wimpod","bug","water","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"768","Golisopod","bug","water","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"769","Sandygast","ghost","ground","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"770","Palossand","ghost","ground","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"771","Pyukumuku","water",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"772","Type-Null","normal",NA,"alola",TRUE,FALSE,FALSE,FALSE,TRUE
+"773","Silvally","normal",NA,"alola",TRUE,FALSE,FALSE,FALSE,TRUE
+"774","Minior-Red-Meteor","rock","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"775","Komala","normal",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"776","Turtonator","fire","dragon","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"777","Togedemaru","electric","steel","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"778","Mimikyu-Disguised","ghost","fairy","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"779","Bruxish","water","psychic","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"780","Drampa","normal","dragon","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"781","Dhelmise","ghost","grass","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"782","Jangmo-O","dragon",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"783","Hakamo-O","dragon","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"784","Kommo-O","dragon","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"785","Tapu-Koko","electric","fairy","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"786","Tapu-Lele","psychic","fairy","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"787","Tapu-Bulu","grass","fairy","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"788","Tapu-Fini","water","fairy","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"789","Cosmog","psychic",NA,"alola",TRUE,FALSE,FALSE,FALSE,TRUE
+"790","Cosmoem","psychic",NA,"alola",TRUE,FALSE,FALSE,FALSE,TRUE
+"791","Solgaleo","psychic","steel","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"792","Lunala","psychic","ghost","alola",TRUE,FALSE,FALSE,FALSE,FALSE
+"793","Nihilego","rock","poison","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"794","Buzzwole","bug","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"795","Pheromosa","bug","fighting","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"796","Xurkitree","electric",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"797","Celesteela","steel","flying","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"798","Kartana","grass","steel","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"799","Guzzlord","dark","dragon","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"800","Necrozma","psychic",NA,"alola",TRUE,FALSE,FALSE,FALSE,TRUE
+"801","Magearna","steel","fairy","alola",FALSE,TRUE,FALSE,FALSE,FALSE
+"802","Marshadow","fighting","ghost","alola",FALSE,TRUE,FALSE,FALSE,FALSE
+"803","Poipole","poison",NA,"alola",FALSE,FALSE,FALSE,FALSE,TRUE
+"804","Naganadel","poison","dragon","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"805","Stakataka","rock","steel","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"806","Blacephalon","fire","ghost","alola",FALSE,FALSE,FALSE,FALSE,FALSE
+"807","Zeraora","electric",NA,"alola",FALSE,TRUE,FALSE,FALSE,TRUE
+"808","Meltan","steel",NA,"alola",FALSE,TRUE,FALSE,FALSE,TRUE
+"809","Melmetal","steel",NA,"alola",FALSE,TRUE,FALSE,FALSE,TRUE
+"810","Grookey","grass",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"811","Thwackey","grass",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"812","Rillaboom","grass",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"813","Scorbunny","fire",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"814","Raboot","fire",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"815","Cinderace","fire",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"816","Sobble","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"817","Drizzile","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"818","Inteleon","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"819","Skwovet","normal",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"820","Greedent","normal",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"821","Rookidee","flying",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"822","Corvisquire","flying",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"823","Corviknight","flying","steel","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"824","Blipbug","bug",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"825","Dottler","bug","psychic","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"826","Orbeetle","bug","psychic","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"827","Nickit","dark",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"828","Thievul","dark",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"829","Gossifleur","grass",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"830","Eldegoss","grass",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"831","Wooloo","normal",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"832","Dubwool","normal",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"833","Chewtle","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"834","Drednaw","water","rock","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"835","Yamper","electric",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"836","Boltund","electric",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"837","Rolycoly","rock",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"838","Carkol","rock","fire","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"839","Coalossal","rock","fire","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"840","Applin","grass","dragon","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"841","Flapple","grass","dragon","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"842","Appletun","grass","dragon","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"843","Silicobra","ground",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"844","Sandaconda","ground",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"845","Cramorant","flying","water","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"846","Arrokuda","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"847","Barraskewda","water",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"848","Toxel","electric","poison","galar / hisui",FALSE,FALSE,TRUE,FALSE,FALSE
+"849","Toxtricity-Amped","electric","poison","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"850","Sizzlipede","fire","bug","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"851","Centiskorch","fire","bug","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"852","Clobbopus","fighting",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"853","Grapploct","fighting",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"854","Sinistea","ghost",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"855","Polteageist","ghost",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"856","Hatenna","psychic",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"857","Hattrem","psychic",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"858","Hatterene","psychic","fairy","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"859","Impidimp","dark","fairy","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"860","Morgrem","dark","fairy","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"861","Grimmsnarl","dark","fairy","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"862","Obstagoon","dark","normal","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"863","Perrserker","steel",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"864","Cursola","ghost",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"865","Sirfetchd","fighting",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"866","Mr-Rime","ice","psychic","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"867","Runerigus","ground","ghost","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"868","Milcery","fairy",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"869","Alcremie","fairy",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"870","Falinks","fighting",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"871","Pincurchin","electric",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"872","Snom","ice","bug","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"873","Frosmoth","ice","bug","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"874","Stonjourner","rock",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"875","Eiscue-Ice","ice",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"876","Indeedee-Male","psychic","normal","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"877","Morpeko-Full-Belly","electric","dark","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"878","Cufant","steel",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"879","Copperajah","steel",NA,"galar / hisui",FALSE,FALSE,FALSE,FALSE,TRUE
+"880","Dracozolt","electric","dragon","galar / hisui",FALSE,FALSE,FALSE,TRUE,FALSE
+"881","Arctozolt","electric","ice","galar / hisui",FALSE,FALSE,FALSE,TRUE,FALSE
+"882","Dracovish","water","dragon","galar / hisui",FALSE,FALSE,FALSE,TRUE,FALSE
+"883","Arctovish","water","ice","galar / hisui",FALSE,FALSE,FALSE,TRUE,FALSE
+"884","Duraludon","steel","dragon","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"885","Dreepy","dragon","ghost","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"886","Drakloak","dragon","ghost","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"887","Dragapult","dragon","ghost","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"888","Zacian","fairy",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"889","Zamazenta","fighting",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"890","Eternatus","poison","dragon","galar / hisui",TRUE,FALSE,FALSE,FALSE,FALSE
+"891","Kubfu","fighting",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"892","Urshifu-Single-Strike","fighting","dark","galar / hisui",TRUE,FALSE,FALSE,FALSE,FALSE
+"893","Zarude","dark","grass","galar / hisui",FALSE,TRUE,FALSE,FALSE,FALSE
+"894","Regieleki","electric",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"895","Regidrago","dragon",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"896","Glastrier","ice",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"897","Spectrier","ghost",NA,"galar / hisui",TRUE,FALSE,FALSE,FALSE,TRUE
+"898","Calyrex","psychic","grass","galar / hisui",TRUE,FALSE,FALSE,FALSE,FALSE
+"899","Wyrdeer","normal","psychic","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"900","Kleavor","bug","rock","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"901","Ursaluna","ground","normal","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"902","Basculegion-Male","water","ghost","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"903","Sneasler","fighting","poison","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"904","Overqwil","dark","poison","galar / hisui",FALSE,FALSE,FALSE,FALSE,FALSE
+"905","Enamorus-Incarnate","fairy","flying","galar / hisui",TRUE,FALSE,FALSE,FALSE,FALSE
+"906","Sprigatito","grass",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"907","Floragato","grass",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"908","Meowscarada","grass","dark","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"909","Fuecoco","fire",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"910","Crocalor","fire",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"911","Skeledirge","fire","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"912","Quaxly","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"913","Quaxwell","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"914","Quaquaval","water","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"915","Lechonk","normal",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"916","Oinkologne-Male","normal",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"917","Tarountula","bug",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"918","Spidops","bug",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"919","Nymble","bug",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"920","Lokix","bug","dark","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"921","Pawmi","electric",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"922","Pawmo","electric","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"923","Pawmot","electric","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"924","Tandemaus","normal",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"925","Maushold-Family-Of-Four","normal",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"926","Fidough","fairy",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"927","Dachsbun","fairy",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"928","Smoliv","grass","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"929","Dolliv","grass","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"930","Arboliva","grass","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"931","Squawkabilly-Green-Plumage","normal","flying","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"932","Nacli","rock",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"933","Naclstack","rock",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"934","Garganacl","rock",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"935","Charcadet","fire",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"936","Armarouge","fire","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"937","Ceruledge","fire","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"938","Tadbulb","electric",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"939","Bellibolt","electric",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"940","Wattrel","electric","flying","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"941","Kilowattrel","electric","flying","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"942","Maschiff","dark",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"943","Mabosstiff","dark",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"944","Shroodle","poison","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"945","Grafaiai","poison","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"946","Bramblin","grass","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"947","Brambleghast","grass","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"948","Toedscool","ground","grass","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"949","Toedscruel","ground","grass","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"950","Klawf","rock",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"951","Capsakid","grass",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"952","Scovillain","grass","fire","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"953","Rellor","bug",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"954","Rabsca","bug","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"955","Flittle","psychic",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"956","Espathra","psychic",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"957","Tinkatink","fairy","steel","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"958","Tinkatuff","fairy","steel","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"959","Tinkaton","fairy","steel","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"960","Wiglett","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"961","Wugtrio","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"962","Bombirdier","flying","dark","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"963","Finizen","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"964","Palafin-Zero","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"965","Varoom","steel","poison","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"966","Revavroom","steel","poison","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"967","Cyclizar","dragon","normal","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"968","Orthworm","steel",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"969","Glimmet","rock","poison","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"970","Glimmora","rock","poison","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"971","Greavard","ghost",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"972","Houndstone","ghost",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"973","Flamigo","flying","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"974","Cetoddle","ice",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"975","Cetitan","ice",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"976","Veluza","water","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"977","Dondozo","water",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"978","Tatsugiri-Curly","dragon","water","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"979","Annihilape","fighting","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"980","Clodsire","poison","ground","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"981","Farigiraf","normal","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"982","Dudunsparce-Two-Segment","normal",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"983","Kingambit","dark","steel","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"984","Great-Tusk","ground","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"985","Scream-Tail","fairy","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"986","Brute-Bonnet","grass","dark","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"987","Flutter-Mane","ghost","fairy","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"988","Slither-Wing","bug","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"989","Sandy-Shocks","electric","ground","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"990","Iron-Treads","ground","steel","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"991","Iron-Bundle","ice","water","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"992","Iron-Hands","fighting","electric","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"993","Iron-Jugulis","dark","flying","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"994","Iron-Moth","fire","poison","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"995","Iron-Thorns","rock","electric","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"996","Frigibax","dragon","ice","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"997","Arctibax","dragon","ice","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"998","Baxcalibur","dragon","ice","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"999","Gimmighoul","ghost",NA,"paldea + dlc",FALSE,FALSE,FALSE,FALSE,TRUE
+"1000","Gholdengo","steel","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1001","Wo-Chien","dark","grass","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1002","Chien-Pao","dark","ice","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1003","Ting-Lu","dark","ground","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1004","Chi-Yu","dark","fire","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1005","Roaring-Moon","dragon","dark","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1006","Iron-Valiant","fairy","fighting","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1007","Koraidon","fighting","dragon","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1008","Miraidon","electric","dragon","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1009","Walking-Wake","water","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1010","Iron-Leaves","grass","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1011","Dipplin","grass","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1012","Poltchageist","grass","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1013","Sinistcha","grass","ghost","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1014","Okidogi","poison","fighting","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1015","Munkidori","poison","psychic","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1016","Fezandipiti","poison","fairy","paldea + dlc",TRUE,FALSE,FALSE,FALSE,FALSE
+"1017","Ogerpon","grass",NA,"paldea + dlc",TRUE,FALSE,FALSE,FALSE,TRUE
+"1018","Archaludon","steel","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1019","Hydrapple","grass","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1020","Gouging-Fire","fire","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1021","Raging-Bolt","electric","dragon","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1022","Iron-Boulder","rock","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1023","Iron-Crown","steel","psychic","paldea + dlc",FALSE,FALSE,FALSE,FALSE,FALSE
+"1024","Terapagos","normal",NA,"paldea + dlc",TRUE,FALSE,FALSE,FALSE,TRUE
+"1025","Pecharunt","poison","ghost","paldea + dlc",FALSE,TRUE,FALSE,FALSE,FALSE

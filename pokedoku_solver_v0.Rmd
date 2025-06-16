@@ -1,0 +1,255 @@
+---
+title: "Pokedoku_solver"
+author: "Alberto M. Arenas"
+date: "2025-06-13"
+output: html_document
+---
+
+## Trying to download data
+
+```{r}
+
+library(httr)
+library(jsonlite)
+
+# API endpoint for Pikachu
+url <- "https://pokeapi.co/api/v2/pokemon/pikachu"
+
+# GET request
+res <- GET(url)
+
+# Parse JSON
+data <- content(res, as = "text", encoding = "UTF-8")
+parsed <- fromJSON(data)
+
+# Look at Pikachu's base stats
+parsed$stats
+
+```
+
+
+```{r}
+
+library(httr)
+library(jsonlite)
+library(tibble)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(tidyr)
+
+get_basic_pokemon_info <- function(pokemon_name) {
+  poke_base <- paste0("https://pokeapi.co/api/v2/pokemon/", tolower(pokemon_name)) %>%
+    httr::GET() %>%
+    httr::content(as = "text") %>%
+    jsonlite::fromJSON()
+
+  species_url <- poke_base$species$url
+  species_data <- httr::GET(species_url) %>%
+    httr::content(as = "text") %>%
+    jsonlite::fromJSON()
+
+  types <- poke_base$types$type.name
+  
+  tibble::tibble(
+    Name = stringr::str_to_title(pokemon_name),
+    Type1 = types[1],
+    Type2 = if (length(types) > 1) types[2] else NA_character_,
+    Generation = stringr::str_remove(species_data$generation$name, "generation-"),
+    Legendary = species_data$is_legendary,
+    Mythical = species_data$is_mythical,
+    Baby = species_data$is_baby
+    # You could add a "Fossil" flag with a manual vector of fossil species
+  )
+}
+
+pikachu <- get_basic_pokemon_info("pikachu")
+cleffa <- get_basic_pokemon_info("cleffa")
+charmander <- get_basic_pokemon_info("deoxys")
+
+```
+
+```{r}
+
+library(httr)
+library(jsonlite)
+library(tibble)
+
+get_pokemon <- function(name) {
+  url <- paste0("https://pokeapi.co/api/v2/pokemon/", tolower(name))
+  resp <- httr::GET(url)
+  
+  # Check if the request was successful
+  if (httr::status_code(resp) != 200) {
+    warning(paste("Pokémon", name, "not found."))
+    return(NULL)
+  }
+  
+  poke_data <- jsonlite::fromJSON(content(resp, "text", encoding = "UTF-8"))
+  
+  # Continue processing safely...
+  types <- poke_data$types$type$name
+  Type1 <- types[1]
+  Type2 <- if (length(types) > 1) types[2] else NA_character_
+  
+  # Now get species endpoint to find additional info
+  species_url <- poke_data$species$url
+  species_resp <- GET(species_url)
+  species_data <- fromJSON(content(species_resp, "text", encoding = "UTF-8"))
+  
+  region_map <- c(
+    "generation-i" = "Kanto", "generation-ii" = "Johto",
+    "generation-iii" = "Hoenn", "generation-iv" = "Sinnoh",
+    "generation-v" = "Unova", "generation-vi" = "Kalos",
+    "generation-vii" = "Alola", "generation-viii" = "Galar",
+    "generation-ix" = "Paldea"
+  )
+  
+  tibble(
+    Name = stringr::str_to_title(name),
+    Type1 = Type1,
+    Type2 = Type2,
+    Region = region_map[[species_data$generation$name]],
+    Legendary = species_data$is_legendary,
+    Mythical = species_data$is_mythical,
+    Baby = species_data$is_baby
+  )
+}
+
+pikachu <- get_pokemon("pikachu")
+deoxys <- get_pokemon("deoxys")
+
+```
+
+```{r}
+
+library(httr)
+library(jsonlite)
+library(tibble)
+library(dplyr)
+library(purrr)
+library(stringr)
+library(tidyr)
+
+# Function to get all Pokémon names
+
+get_pokemon_names <- function(limit = 1025) {
+  url <- paste0("https://pokeapi.co/api/v2/pokemon?limit=", limit)
+  resp <- GET(url)
+  content <- fromJSON(content(resp, "text", encoding = "UTF-8"))
+  content$results$name
+}
+
+poke_names <- get_pokemon_names(limit = 1025)
+
+
+# Function to extract types, generation, and other attributes for each Pokémon 
+
+get_pokemon2 <- function(name) {
+  tryCatch({
+    url <- paste0("https://pokeapi.co/api/v2/pokemon/", tolower(name))
+    resp <- GET(url)
+    if (status_code(resp) != 200) return(NULL)
+    
+    poke_data <- fromJSON(content(resp, "text", encoding = "UTF-8"))
+    types <- poke_data$types$type$name
+    Type1 <- types[1]
+    Type2 <- if (length(types) > 1) types[2] else NA_character_
+
+    species_url <- poke_data$species$url
+    species_resp <- GET(species_url)
+    species_data <- fromJSON(content(species_resp, "text", encoding = "UTF-8"))
+
+    region_map <- c(
+      "generation-i" = "kanto", "generation-ii" = "johto",
+      "generation-iii" = "hoenn", "generation-iv" = "sinnoh",
+      "generation-v" = "unova", "generation-vi" = "kalos",
+      "generation-vii" = "alola", "generation-viii" = "galar / hisui",
+      "generation-ix" = "paldea"
+    )
+
+    tibble(
+      Name = stringr::str_to_title(name),
+      Type1 = Type1,
+      Type2 = Type2,
+      Region = region_map[[species_data$generation$name]],
+      Legendary = species_data$is_legendary,
+      Mythical = species_data$is_mythical,
+      Baby = species_data$is_baby
+    )
+  }, error = function(e) {
+    message(paste("Error with", name, ":", e$message))
+    return(NULL)
+  })
+}
+
+all_pokemon <- map(poke_names, function(name) {
+  Sys.sleep(0.5)  # avoid getting rate-limited
+  get_pokemon2(name)
+})
+
+all_poke_df <- bind_rows(all_pokemon)
+
+
+# Example: Filter for electric-types
+electric_pokemon <- all_poke_df %>%
+  filter(Type1 == "electric" | Type2 == "electric")
+
+print(electric_pokemon)
+
+```
+
+
+```{r}
+
+# Add the extra columns "Fossil" and "Mono-type" and "Dual-type":
+
+fossil_pokemon <- c(
+  "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl",
+  "lileep", "cradily", "anorith", "armaldo",
+  "cranidos", "rampardos", "shieldon", "bastiodon",
+  "tirtouga", "carracosta", "archen", "archeops",
+  "tyrunt", "tyrantrum", "amaura", "aurorus",
+  "dracozolt", "arctozolt", "dracovish", "arctovish")
+
+# Add a column "Fossil" to indicate if pokemon is a fossil Pokemon, and the monotype column too
+
+all_poke_df <- all_poke_df %>% 
+  mutate(Fossil = ifelse(tolower(Name) %in% fossil_pokemon, TRUE, FALSE)) %>% 
+  mutate(Mono-type = ifelse(is.na(Type2), TRUE, FALSE))
+
+
+```
+
+```{r}
+
+#MAKE THE HINT GRID
+
+library(tibble)
+library(purrr)
+
+# Define your row and column hints
+row_hints <- c("flying", "mono-type", "dual-type")
+col_hints <- c("hoenn", "fire", "normal")
+
+# Create all combinations of rows and columns
+grid <- expand.grid(row = row_hints, col = col_hints, stringsAsFactors = FALSE)
+
+# Create a list-column where each entry is a vector of two hints
+grid <- grid %>%
+  mutate(hints = map2(col, row, ~ c(.x,.y)))
+
+
+# For the first square, find a list of pokemons that suit the conditions
+
+hint1 <- grid$hints[[1]][1]
+hint2 <- grid$hints[[1]][2]
+
+solution1 <- all_poke_df %>% 
+  filter(Region == hint1,
+         Type1 == hint2 | Type2 == hint2)
+
+print(solution1)
+```
+
+
