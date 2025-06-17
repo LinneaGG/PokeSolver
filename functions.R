@@ -9,8 +9,10 @@ library(purrr)
 library(stringr)
 library(tidyr)
 
+all_poke_df_original <- read_csv("all_poke_df_test.csv")
+
 # Put type columns into a single column 
-all_poke_df <- all_poke_df_test %>%
+all_poke_df <- all_poke_df_original %>%
   pivot_longer(cols = c(Type1, Type2),
                names_to  = "type_rm",
                values_to = "Type") %>%
@@ -30,8 +32,8 @@ all_poke_df <- all_poke_df_test %>%
 
 # Declare which type the hint belongs to 
 # (to be able to grab it from the df)
-type_list <- unique(c(all_poke_df_test$Type1, all_poke_df_test$Type2))
-region_list <- unique(all_poke_df_test$Region)
+type_list <- unique(c(all_poke_df_original$Type1, all_poke_df_original$Type2))
+region_list <- unique(all_poke_df_original$Region)
 
 
 # Select row based on 2 strings
