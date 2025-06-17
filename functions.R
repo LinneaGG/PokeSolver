@@ -9,7 +9,7 @@ library(purrr)
 library(stringr)
 library(tidyr)
 
-all_poke_df_original <- read_csv("all_poke_df_test.csv")
+all_poke_df_original <- read_csv("all_poke_df_v1.csv")
 
 # Put type columns into a single column 
 all_poke_df <- all_poke_df_original %>%
