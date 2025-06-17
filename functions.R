@@ -160,23 +160,20 @@ solve_pokedoku <- function(file, columns, rows) {
     mutate(across(starts_with("Type_") , ~ . == 1),
            across(starts_with("Region_"), ~ . == 1))
   
-  # Lists of types and regions
-  type_list <- unique(c(all_poke_df_original$Type1, all_poke_df_original$Type2))
-  region_list <- unique(all_poke_df_original$Region)
+  # Remove "Type_" and "Region_" from the start of colnames
+  colnames(all_poke_df) <- str_replace_all(colnames(all_poke_df), "^(Type_|Region_)", "")
+  
+  # Change all column names to lowercase
+  colnames(all_poke_df) <- tolower(colnames(all_poke_df))
   
   # Matching function
   match_pokemon <- function(df, hint1, hint2) {
     hint1 <- tolower(hint1)
     hint2 <- tolower(hint2)
     
-    if (hint1 %in% type_list)  hint1 <- paste0("Type_", hint1)
-    if (hint2 %in% type_list)  hint2 <- paste0("Type_", hint2)
-    if (hint1 %in% region_list) hint1 <- paste0("Region_", hint1)
-    if (hint2 %in% region_list) hint2 <- paste0("Region_", hint2)
-    
     df %>%
       filter(!!sym(hint1) & !!sym(hint2)) %>%
-      dplyr::select(Name, Sprite)
+      dplyr::select(name, sprite)
   }
   
   # Build grid
