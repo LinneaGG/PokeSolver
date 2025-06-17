@@ -2,9 +2,10 @@ library(shiny)
 
 source("../functions.R")
 
-# UI
 ui <- fluidPage(
   titlePanel("PokeDoku Solver"),
+  
+  actionButton("go", "Solve!"), 
   
   fluidRow(
     column(2,
@@ -33,25 +34,42 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  all_poke_file <- "../all_poke_df_v3.csv"
+  
+  default_img <- "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
+  
+  # Reactive value to store the grid
+  grid_images <- reactiveVal(matrix(default_img, nrow = 3, ncol = 3))
+  
+  # Update grid on button press
+  observeEvent(input$go, {
+    new_grid <- matrix(default_img, nrow = 3, ncol = 3)
+    
+    hint_columns <- c(input$hint2_1, input$hint2_2, input$hint2_3)
+    hint_rows <- c(input$hint1_1, input$hint1_2, input$hint1_3)
+    
+    result <- solve_pokedoku(all_poke_file, hint_columns, hint_rows)
+    
+    k <- 1
+    for (i in 1:3){
+      for (j in 1:3){
+        if (nrow(result$result[[k]]) > 0 && !is_empty(result$result[[k]]$sprite)) {
+          new_grid[i, j] <- result$result[[k]]$sprite[1]
+        }
+        k <- k + 1
+      }
+    }
+    grid_images(new_grid)
+  })
+  
+  # Render each image slot
   for (i in 1:3) {
     for (j in 1:3) {
       local({
         ii <- i; jj <- j
-        output[[paste0("img_", i, "_", j)]] <- renderUI({
-          # url <- match_pokemon(all_poke_df, input[[paste0(hint1, "_", ii)]], 
-          #                      input[[paste0(hint2, "_", ii)]])[1,2] # Pick first pokemon in df
-          # 
-          # if (is.null(url)) url <- "https://via.placeholder.com/200?text=No+Image"
-          
-          hint1_input <- input[[paste0("hint1_", ii)]]
-          hint2_input <- input[[paste0("hint2_", jj)]]
-          
-          result <- match_pokemon(all_poke_df, hint1_input, hint2_input)
-          
-          url <- if (nrow(result) > 0) result$Sprite[1] else "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
-          
-
-          tags$img(src = url, width = "100%", style = "margin-bottom: 10px;")
+        output[[paste0("img_", ii, "_", jj)]] <- renderUI({
+          img_url <- grid_images()[ii, jj]
+          tags$img(src = img_url, width = "200px", style = "margin: 5px;")
         })
       })
     }
