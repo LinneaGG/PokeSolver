@@ -10,7 +10,6 @@ library(stringr)
 library(tidyr)
 library(future)
 
-
 ## PRE-DEFINED VARIABLES AND VECTORS
 
 fossil_pokemon <- c(
@@ -143,8 +142,11 @@ update_all_poke_df <- function(version = 1, workers = 4, delay = 0.5, output_dir
 ## CONVERT POKEMON TABLE TO ONE-HOT ENCODING FORMAT
 
 # One-hot encoding categorical variables
+
+all_poke_df_original <- read_csv("all_poke_df_v1.csv")
+
 # Put type columns into a single column 
-all_poke_df <- all_poke_df_test %>%
+all_poke_df <- all_poke_df_original %>%
   pivot_longer(cols = c(Type1, Type2),
                names_to  = "type_rm",
                values_to = "Type") %>%
@@ -164,8 +166,8 @@ all_poke_df <- all_poke_df_test %>%
 
 # Declare which type the hint belongs to 
 # (to be able to grab it from the df)
-type_list <- unique(c(all_poke_df_test$Type1, all_poke_df_test$Type2))
-region_list <- unique(all_poke_df_test$Region)
+type_list <- unique(c(all_poke_df_original$Type1, all_poke_df_original$Type2))
+region_list <- unique(all_poke_df_original$Region)
 
 
 # Select row based on 2 strings
@@ -187,5 +189,5 @@ match_pokemon <- function(df, hint1, hint2) {
   ########## Change case as needed!!!!!!!!
   df %>%
     filter(!!sym(hint1) & !!sym(hint2)) %>%
-    dplyr::select(Name)
+    dplyr::select(Name) # And image url
 }
