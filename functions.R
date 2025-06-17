@@ -143,7 +143,7 @@ update_all_poke_df <- function(version = 1, workers = 4, delay = 0.5, output_dir
 
 # One-hot encoding categorical variables
 
-all_poke_df_original <- read_csv("all_poke_df_v1.csv")
+all_poke_df_original <- read_csv("../all_poke_df_v1.csv")
 
 # Put type columns into a single column 
 all_poke_df <- all_poke_df_original %>%
