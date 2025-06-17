@@ -100,8 +100,8 @@ catch_pokemon <- function(name) {
       Fossil = ifelse(tolower(name) %in% fossil_pokemon, TRUE, FALSE),
       Mega = grepl("-mega", tolower(name)),
       Gmax = grepl("-gmax", tolower(name)),
-      `Mono-type` = is.na(Type2),
-      `Dual-type` = !is.na(Type2),
+      Mono_type = is.na(Type2),
+      Dual_type = !is.na(Type2),
       Sprite = poke_data$sprites$front_default
     )
   }, error = function(e) {
