@@ -100,8 +100,8 @@ catch_pokemon <- function(name) {
       Fossil = ifelse(tolower(name) %in% fossil_pokemon, TRUE, FALSE),
       Mega = grepl("-mega", tolower(name)),
       Gmax = grepl("-gmax", tolower(name)),
-      `Mono-type` = is.na(Type2),
-      `Dual-type` = !is.na(Type2),
+      Mono_type = is.na(Type2),
+      Dual_type = !is.na(Type2),
       Sprite = poke_data$sprites$front_default
     )
   }, error = function(e) {
@@ -139,55 +139,50 @@ update_all_poke_df <- function(version = 1, workers = 4, delay = 0.5, output_dir
 }
 
 
-## CONVERT POKEMON TABLE TO ONE-HOT ENCODING FORMAT
+## SOLVE POKÉDOKU FUNCTION
 
-# One-hot encoding categorical variables
-
-all_poke_df_original <- read_csv("../all_poke_df_v1.csv")
-
-# Put type columns into a single column 
-all_poke_df <- all_poke_df_original %>%
-  pivot_longer(cols = c(Type1, Type2),
-               names_to  = "type_rm",
-               values_to = "Type") %>%
-  na.omit() %>%    # drop any NA “Type2”
-  dplyr::select(-type_rm) %>% 
-  # Make dummy variables
-  dummy_cols(select_columns = c("Type", "Region"), 
-             remove_selected_columns = TRUE) %>% 
-  # Combine rows so that there's 1 row per pokemon
-  group_by(Name) %>%
-  mutate(across(starts_with("Type_"), ~ max(.x, na.rm = TRUE))) %>% 
-  distinct() %>% 
-  # Change from 1/0 to TRUE/FALSE
-  mutate(across(starts_with("Type_")  , ~ . == 1),
-         across(starts_with("Region_"), ~ . == 1))
-
-
-# Declare which type the hint belongs to 
-# (to be able to grab it from the df)
-type_list <- unique(c(all_poke_df_original$Type1, all_poke_df_original$Type2))
-region_list <- unique(all_poke_df_original$Region)
-
-
-# Select row based on 2 strings
-# Return row in all_poke_df where certain columns are TRUE
-match_pokemon <- function(df, hint1, hint2) {
-  if (hint1 %in% type_list){
-    # Append "Type_" before hint1
-    hint1 <- paste0("Type_", hint1)
+solve_pokedoku <- function(file, columns, rows) {
+  # Load data
+  all_poke_df_original <- read_csv(file, show_col_types = FALSE)
+  
+  # Pivot, dummy-encode, and reshape
+  all_poke_df <- all_poke_df_original %>%
+    pivot_longer(cols = c(Type1, Type2),
+                 names_to  = "type_rm",
+                 values_to = "Type") %>%
+    na.omit() %>%
+    dplyr::select(-type_rm) %>%
+    dummy_cols(select_columns = c("Type", "Region"),
+               remove_selected_columns = TRUE) %>%
+    group_by(Name) %>%
+    mutate(across(starts_with("Type_"),  ~ max(.x, na.rm = TRUE))) %>%
+    distinct() %>%
+    mutate(across(starts_with("Type_") , ~ . == 1),
+           across(starts_with("Region_"), ~ . == 1))
+  
+  # Lists of types and regions
+  type_list <- unique(c(all_poke_df_original$Type1, all_poke_df_original$Type2))
+  region_list <- unique(all_poke_df_original$Region)
+  
+  # Matching function
+  match_pokemon <- function(df, hint1, hint2) {
+    hint1 <- tolower(hint1)
+    hint2 <- tolower(hint2)
+    
+    if (hint1 %in% type_list)  hint1 <- paste0("Type_", hint1)
+    if (hint2 %in% type_list)  hint2 <- paste0("Type_", hint2)
+    if (hint1 %in% region_list) hint1 <- paste0("Region_", hint1)
+    if (hint2 %in% region_list) hint2 <- paste0("Region_", hint2)
+    
+    df %>%
+      filter(!!sym(hint1) & !!sym(hint2)) %>%
+      dplyr::select(Name, Sprite)
   }
-  if (hint2 %in% type_list){
-    hint2 <- paste0("Type_", hint2)
-  } 
-  if (hint1 %in% region_list){
-    hint1 <- paste0("Region_", hint1)
-  } 
-  if (hint2 %in% region_list){
-    hint2 <- paste0("Region_", hint2)
-  }
-  ########## Change case as needed!!!!!!!!
-  df %>%
-    filter(!!sym(hint1) & !!sym(hint2)) %>%
-    dplyr::select(Name, Sprite)
+  
+  # Build grid
+  grid <- expand.grid(col = columns, row = rows, stringsAsFactors = FALSE) %>%
+    mutate(hints = map2(col, row, ~ c(.x, .y)),
+           result = map(hints, ~ match_pokemon(all_poke_df, .x[1], .x[2])))
+  
+  return(grid)
 }
