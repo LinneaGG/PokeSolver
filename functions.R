@@ -47,5 +47,5 @@ match_pokemon <- function(df, hint1, hint2) {
   ########## Change case as needed!!!!!!!!
   df %>%
     filter(!!sym(hint1) & !!sym(hint2)) %>%
-    dplyr::select(Name)
+    dplyr::select(Name) # And image url
 }
