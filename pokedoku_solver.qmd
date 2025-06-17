@@ -144,29 +144,3 @@ all_poke_df <- bind_rows(all_pokemon)
 
 ```
 
-
-```{r}
-# One-hot encoding categorical variables
-
-library(fastDummies)
-
-# Put type columns into a single column 
-all_poke_df_test_ohe <- all_poke_df_test %>%
-  pivot_longer(cols = c(Type1, Type2),
-               names_to  = "type_rm",
-               values_to = "Type") %>%
-  na.omit() %>%    # drop any NA “Type2”
-  dplyr::select(-type_rm) %>% 
-  # Make dummy variables
-  dummy_cols(select_columns = c("Type", "Region"), 
-             remove_selected_columns = TRUE) %>% 
-  # Combine rows so that there's 1 row per pokemon
-  group_by(Name) %>%
-  mutate(across(starts_with("Type_"), ~ max(.x, na.rm = TRUE))) %>% 
-  distinct() %>% 
-  # Change from 1/0 to TRUE/FALSE
-  mutate(across(starts_with("Type_")  , ~ . == 1),
-         across(starts_with("Region_"), ~ . == 1))
-
-```
-
