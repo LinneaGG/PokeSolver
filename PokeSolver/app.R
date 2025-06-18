@@ -7,16 +7,46 @@ hint_options <- c(
   unique(all_poke_df_original$Type1), 
   unique(all_poke_df_original$Type2), 
   unique(all_poke_df_original$Region),
-  c("fossil", "legendary", "mythical", "baby", "mega", "gmax", "mono_type", "dual_type")) %>%  
+  c("fossil", "legendary", "mythical", "baby", "mega", "gmax", "first_partner", "paradox", "ultra_beast","mono_type", "dual_type")) %>%  
   tolower() %>%  
   unique() %>%  
   sort()
 
 ui <- fluidPage(
+
   theme = shinytheme("simplex"),
   
+  tags$head(
+    tags$style(HTML("
+      .tooltip-container {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip-container .tooltip-text {
+        visibility: hidden;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 6px 12px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1000;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 16px;
+      }
+      .tooltip-container:hover .tooltip-text {
+        visibility: visible;
+      }
+    "))
+  ),
+  
   titlePanel("PokeDoku Solver"),
+  
   actionButton("go", "Solve!", class = "btn btn-danger"),
+
   
   fluidRow(
     # Left column: vertical hints
@@ -52,42 +82,122 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   all_poke_file <- "../all_poke_df_v3.csv"
-  
   default_img <- "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
   
-  # Reactive value to store the grid
   grid_images <- reactiveVal(matrix(default_img, nrow = 3, ncol = 3))
+  sprite_options <- reactiveVal(vector("list", 9))
+  sprite_names <- reactiveVal(vector("list", 9))  # Store names for tooltips
   
-  # Update grid on button press
   observeEvent(input$go, {
     new_grid <- matrix(default_img, nrow = 3, ncol = 3)
+    new_options <- vector("list", 9)
+    new_names <- vector("list", 9)
     
     hint_columns <- c(input$hint2_1, input$hint2_2, input$hint2_3)
     hint_rows <- c(input$hint1_1, input$hint1_2, input$hint1_3)
-    
     result <- solve_pokedoku(all_poke_file, hint_columns, hint_rows)
     
     k <- 1
-    for (i in 1:3){
-      for (j in 1:3){
-        if (nrow(result$result[[k]]) > 0 && !is_empty(result$result[[k]]$sprite)) {
-          new_grid[i, j] <- result$result[[k]]$sprite[1]
+    for (i in 1:3) {
+      for (j in 1:3) {
+        if (nrow(result$result[[k]]) > 0) {
+          sprites <- result$result[[k]]$sprite
+          names <- str_to_title(result$result[[k]]$name)
+          if (!is.null(sprites) && length(sprites) > 0) {
+            new_grid[i, j] <- sprites[1]
+            new_options[[k]] <- sprites
+            new_names[[k]] <- names
+          }
         }
         k <- k + 1
       }
     }
+    
     grid_images(new_grid)
+    sprite_options(new_options)
+    sprite_names(new_names)
   })
   
-  # Render each image slot
   for (i in 1:3) {
     for (j in 1:3) {
       local({
         ii <- i; jj <- j
-        output[[paste0("img_", ii, "_", jj)]] <- renderUI({
-          img_url <- grid_images()[ii, jj]
-          tags$img(src = img_url, width = "200px", style = "margin: 5px;")
+        output_id <- paste0("img_", ii, "_", jj)
+        button_id <- paste0("btn_", ii, "_", jj)
+        
+        output[[output_id]] <- renderUI({
+          k <- (ii - 1) * 3 + jj
+          sprite <- grid_images()[ii, jj]
+          name_list <- sprite_names()[[k]]
+          name <- if (!is.null(name_list) && length(name_list) > 0) name_list[1] else "No valid Pokémon"
+          
+          actionButton(
+            inputId = button_id,
+            label = HTML(sprintf(
+              '<div class="tooltip-container">
+                 <img src="%s" width="180px" height="180px" style="margin: 5px;">
+                 <div class="tooltip-text">%s</div>
+               </div>',
+              sprite, name
+            )),
+            style = "padding: 0; border: none; background: none;"
+          )
         })
+        
+        observeEvent(input[[button_id]], {
+          k <- (ii - 1) * 3 + jj
+          options <- sprite_options()[[k]]
+          names <- sprite_names()[[k]]
+          
+          if (!is.null(options) && length(options) > 0) {
+            showModal(modalDialog(
+              title = "Select another Pokémon",
+              easyClose = TRUE,
+              footer = NULL,
+              fluidRow(
+                lapply(seq_along(options), function(idx) {
+                  select_id <- paste0("select_", ii, "_", jj, "_", idx)
+                  name <- if (!is.null(names) && length(names) >= idx) names[idx] else "Unknown"
+                  
+                  column(2, actionButton(
+                    inputId = select_id,
+                    label = HTML(sprintf(
+                      '<div class="tooltip-container">
+                         <img src="%s" width="100px" height="100px">
+                         <div class="tooltip-text">%s</div>
+                       </div>',
+                      options[idx], name
+                    )),
+                    style = "padding: 0; border: none; background: none;"
+                  ))
+                })
+              )
+            ))
+          }
+        })
+        
+        observe({
+          k <- (ii - 1) * 3 + jj
+          options <- sprite_options()[[k]]
+          names <- sprite_names()[[k]]
+          lapply(seq_along(options), function(idx) {
+            select_id <- paste0("select_", ii, "_", jj, "_", idx)
+            observeEvent(input[[select_id]], {
+              current_grid <- grid_images()
+              current_names <- sprite_names()
+              
+              current_grid[ii, jj] <- options[idx]
+              if (!is.null(names) && length(names) >= idx) {
+                current_names[[k]][1] <- names[idx]
+              }
+              
+              grid_images(current_grid)
+              sprite_names(current_names)
+              removeModal()
+            })
+          })
+        })
+        
       })
     }
   }
