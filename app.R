@@ -19,7 +19,28 @@ ui <- fluidPage(
   theme = shinytheme("simplex"),
   
   tags$head(
+    tags$link(href = "https://fonts.googleapis.com/css2?family=Jersey+10&display=swap", 
+              rel = "stylesheet"),
     tags$style(HTML("
+      h2 {
+        font-family: 'Jersey 10', sans-serif;
+        font-size: 75px;
+        font-weight: 500;
+        color: #333;
+      }
+      
+      /* Colored header block */
+      #header-block {
+        background-color: #b50214;
+        padding: 20px 0;
+        text-align: center;
+        color: white;
+        font-family: 'Jersey 10', sans-serif;
+        font-size: 48px;
+        font-weight: normal;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      }
+    
       .tooltip-container {
         position: relative;
         display: inline-block;
@@ -45,10 +66,18 @@ ui <- fluidPage(
     "))
   ),
   
-  titlePanel("PokeDoku Solver"),
+  # Audio element (hidden)
+  tags$audio(id = "clickSound", src = "pikachu-starter.mp3", type = "audio/mp3", preload = "auto"),
   
-  actionButton("go", "Solve!", class = "btn btn-danger"),
+  #titlePanel("PokeDoku Solver"),
+  div(id = "header-block", "PokeDoku Solver"),
+  
+  actionButton("go", "Solve!", class = "btn btn-danger btn-lg", 
+               style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 36px"),
 
+  actionButton("randomize", "Randomize hints", class = "btn btn-secondary", 
+               style = "margin-top: 30px; margin-left: 60px"),
+  
   
   fluidRow(
     # Left column: vertical hints
@@ -85,7 +114,17 @@ ui <- fluidPage(
              })
            )
     )
-  )
+  ),
+  
+  # JS to play sound on button click
+  tags$script(HTML("
+    document.getElementById('go').addEventListener('click', function() {
+      var sound = document.getElementById('clickSound');
+      sound.currentTime = 0;  // rewind to start
+      sound.play();
+    });
+  "))
+  
 )
 
 server <- function(input, output, session) {
@@ -96,6 +135,18 @@ server <- function(input, output, session) {
   grid_images <- reactiveVal(matrix(default_img, nrow = 3, ncol = 3))
   sprite_options <- reactiveVal(vector("list", 9))
   sprite_names <- reactiveVal(vector("list", 9))  # Store names for tooltips
+  
+  observeEvent(input$randomize, {
+    random_hints <- sample(hint_options, 6, replace = FALSE)
+    
+    updateSelectInput(session, "hint1_1", selected = str_to_title(random_hints[1]))
+    updateSelectInput(session, "hint1_2", selected = str_to_title(random_hints[2]))
+    updateSelectInput(session, "hint1_3", selected = str_to_title(random_hints[3]))
+    updateSelectInput(session, "hint2_1", selected = str_to_title(random_hints[4]))
+    updateSelectInput(session, "hint2_2", selected = str_to_title(random_hints[5]))
+    updateSelectInput(session, "hint2_3", selected = str_to_title(random_hints[6]))
+  })
+  
   
   observeEvent(input$go, {
     new_grid <- matrix(default_img, nrow = 3, ncol = 3)
