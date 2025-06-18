@@ -51,26 +51,23 @@ ui <- fluidPage(
   tags$audio(id = "clickSound", src = "pikachu-starter.mp3", type = "audio/mp3", preload = "auto"),
   
   div(
-    style = "background-color: #b50214; padding: 2px; margin-bottom: 2px;",
-    fluidRow(
-      column(2,
-             tags$img(src = "logo_pokesolver.png",
-                      height = "130px", style = "margin-left: 10px;")
-      ),
-      column(10,
-             tags$h1("PokeDoku Solver", 
-                     style = "font-family: 'Jersey 10', sans-serif; font-size: 64px; 
-                     font-weight: 500; margin-top: 30px; margin-left: 60px; color: white")
-      )
-    )
-  ),
+    style = "background-color: #b50214; padding: 2px; margin-bottom: 2px; display: flex; align-items: center;",
+    
+    tags$img(src = "logo_pokesolver.png",
+             height = "130px", style = "margin-left: 10px;"),
+    
+    tags$h1("PokeDoku Solver", 
+            style = "flex-grow: 1; font-family: 'Jersey 10', sans-serif; font-size: 72px; 
+                  font-weight: 500; color: white; text-align: center; margin: 0 20px;")
+  )
+  ,
   
   
   actionButton("go", "Solve!", class = "btn btn-danger btn-lg", 
-               style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 36px"),
+               style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 44px"),
 
   actionButton("randomize", "Randomize hints", class = "btn btn-secondary", 
-               style = "margin-top: 30px; margin-left: 60px"),
+               style = "margin-top: 30px; margin-left: 60px;"),
   
   
   fluidRow(
@@ -78,11 +75,11 @@ ui <- fluidPage(
     column(2,
            div(
             selectInput("hint2_1", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = ""),
-            style = "margin-bottom: 130px; margin-top: 145px;"
+            style = "margin-bottom: 105px; margin-top: 125px;"
            ), 
            div(
             selectInput("hint2_2", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = ""),
-            style = "margin-bottom: 130px;"
+            style = "margin-bottom: 105px;"
            ), 
             selectInput("hint2_3", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = "")
     ),
@@ -199,11 +196,11 @@ server <- function(input, output, session) {
           
           tooltip_html <- if (show_tooltips() && name != "") {
             sprintf('<div class="tooltip-container">
-               <img src="%s" width="180px" height="180px" style="margin: 5px;">
+               <img src="%s" width="150px" height="150px" style="margin: 5px;">
                <div class="tooltip-text">%s</div>
              </div>', sprite, name)
           } else {
-            sprintf('<img src="%s" width="180px" height="180px" style="margin: 5px;">', sprite)
+            sprintf('<img src="%s" width="150px" height="150px" style="margin: 5px;">', sprite)
           }
           
           actionButton(
