@@ -18,6 +18,7 @@ ui <- fluidPage(
 
   theme = shinytheme("simplex"),
   
+  # Define font and tooltip options
   tags$head(
     tags$link(href = "https://fonts.googleapis.com/css2?family=Jersey+10&display=swap", 
               rel = "stylesheet"),
@@ -47,9 +48,10 @@ ui <- fluidPage(
     "))
   ),
   
-  # Audio element (hidden)
+  # Audio element 
   tags$audio(id = "clickSound", src = "pikachu-starter.mp3", type = "audio/mp3", preload = "auto"),
   
+  # Header
   div(
     style = "background-color: #b50214; padding: 2px; margin-bottom: 2px; display: flex; align-items: center;",
     
@@ -62,12 +64,14 @@ ui <- fluidPage(
   )
   ,
   
+  # Buttons
   actionButton("go", "Solve!", class = "btn btn-danger btn-lg", 
                style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 44px"),
 
   actionButton("randomize", "Randomize hints", class = "btn btn-secondary", 
                style = "margin-top: 30px; margin-left: 60px;"),
   
+  # Text inputs
   fluidRow(
     # Left column: vertical hints
     column(2,
@@ -125,6 +129,7 @@ server <- function(input, output, session) {
   sprite_options <- reactiveVal(vector("list", 9))
   sprite_names <- reactiveVal(vector("list", 9))  # Store names for tooltips
   
+  # Randomize hints when Rabdomize button is clicked
   observeEvent(input$randomize, {
     random_hints <- sample(hint_options, 6, replace = FALSE)
     
@@ -136,6 +141,7 @@ server <- function(input, output, session) {
     updateSelectInput(session, "hint2_3", selected = str_to_title(random_hints[6]))
   })
   
+  # Put the images when Solve button is clicked
   observeEvent(input$go, {
     new_grid <- matrix(default_img, nrow = 3, ncol = 3)
     new_options <- vector("list", 9)
@@ -146,6 +152,7 @@ server <- function(input, output, session) {
     
     show_tooltips(TRUE)
     
+    # To stop app from crashing if Solve button is clicked before hints have been input
     if (any(hint_columns == "") || any(hint_rows == "")) {
       showModal(modalDialog(
         title = "Missing Input",
@@ -155,8 +162,10 @@ server <- function(input, output, session) {
       return()
     }
     
+    # Call function to find matches
     result <- solve_pokedoku(all_poke_file, hint_columns, hint_rows)
     
+    # Input results into the grid
     k <- 1
     for (i in 1:3) {
       for (j in 1:3) {
@@ -191,6 +200,7 @@ server <- function(input, output, session) {
           name_list <- sprite_names()[[k]]
           name <- if (!is.null(name_list) && length(name_list) > 0) name_list[1] else "No valid Pokémon"
           
+          # Add pokemon names in tooltip when hovering
           tooltip_html <- if (show_tooltips() && name != "") {
             sprintf('<div class="tooltip-container">
                <img src="%s" width="150px" height="150px" style="margin: 5px;">
@@ -207,6 +217,7 @@ server <- function(input, output, session) {
           )
         })
         
+        # Open box with other pokemon that match when clicking image
         observeEvent(input[[button_id]], {
           k <- (ii - 1) * 3 + jj
           options <- sprite_options()[[k]]
