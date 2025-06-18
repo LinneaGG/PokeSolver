@@ -55,12 +55,12 @@ ui <- fluidPage(
     fluidRow(
       column(2,
              tags$img(src = "logo_pokesolver.png",
-                      height = "180px", style = "margin-left: 10px;")
+                      height = "130px", style = "margin-left: 10px;")
       ),
       column(10,
              tags$h1("PokeDoku Solver", 
                      style = "font-family: 'Jersey 10', sans-serif; font-size: 64px; 
-                     font-weight: 500; margin-top: 60px; margin-left: 60px; color: white")
+                     font-weight: 500; margin-top: 30px; margin-left: 60px; color: white")
       )
     )
   ),
