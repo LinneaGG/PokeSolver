@@ -33,6 +33,8 @@ hisuian_pokemon <- c(
   "samurott-hisui",
   "decidueye-hisui",
   "typhlosion-hisui",
+  "sneasel-hisui",
+  "sneasler",
   "qwilfish-hisui",
   "sliggoo-hisui",
   "goodra-hisui",
