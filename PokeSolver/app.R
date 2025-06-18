@@ -2,11 +2,13 @@ library(shiny)
 library(shinythemes)
 
 source("../functions.R")
+all_poke_file <- "../all_poke_df_v4.csv"
+all_poke_original <- read.csv(all_poke_file)
 
 hint_options <- c(
-  unique(all_poke_df_original$Type1), 
-  unique(all_poke_df_original$Type2), 
-  unique(all_poke_df_original$Region),
+  unique(all_poke_original$Type1), 
+  unique(all_poke_original$Type2), 
+  unique(all_poke_original$Region),
   c("fossil", "legendary", "mythical", "baby", "mega", "gmax", "first_partner", "paradox", "ultra_beast","mono_type", "dual_type")) %>%  
   tolower() %>%  
   unique() %>%  
@@ -87,7 +89,6 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-  all_poke_file <- "../all_poke_df_v4.csv"
   default_img <- "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
   
   show_tooltips <- reactiveVal(FALSE)
