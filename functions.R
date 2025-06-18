@@ -6,6 +6,7 @@ library(httr)
 library(jsonlite)
 library(tibble)
 library(purrr)
+library(furrr)
 library(stringr)
 library(tidyr)
 library(future)
@@ -135,7 +136,13 @@ catch_pokemon <- function(name) {
       Name = tolower(name),
       Type1 = Type1,
       Type2 = Type2,
-      Region = ifelse(tolower(name) %in% hisuian_pokemon, "hisui", region_map[[species_data$generation$name]]),
+      Region = case_when( #case_when stops when the first TRUE condition is met
+        grepl("-alola",  tolower(name))  ~ "alola",
+        grepl("-galar",  tolower(name))  ~ "galar",
+        grepl("-paldea", tolower(name))  ~ "paldea",
+        tolower(name) %in% hisuian_pokemon ~ "hisui",
+        TRUE ~ region_map[[species_data$generation$name]]
+      ),
       Legendary = species_data$is_legendary,
       Mythical = species_data$is_mythical,
       Baby = species_data$is_baby,
