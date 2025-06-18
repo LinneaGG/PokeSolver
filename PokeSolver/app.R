@@ -1,28 +1,45 @@
 library(shiny)
+library(shinythemes)
 
 source("../functions.R")
 
+hint_options <- c(
+  unique(all_poke_df_original$Type1), 
+  unique(all_poke_df_original$Type2), 
+  unique(all_poke_df_original$Region),
+  c("fossil", "legendary", "mythical", "baby", "mega", "gmax", "mono_type", "dual_type")) %>%  
+  tolower() %>%  
+  unique() %>%  
+  sort()
+
 ui <- fluidPage(
-  titlePanel("PokeDoku Solver"),
+  theme = shinytheme("simplex"),
   
-  actionButton("go", "Solve!"), 
+  titlePanel("PokeDoku Solver"),
+  actionButton("go", "Solve!", class = "btn btn-danger"),
   
   fluidRow(
+    # Left column: vertical hints
     column(2,
-           selectInput("hint2_1", "Vertical 1", choices = c("fairy", "flying", "bug")),
-           selectInput("hint2_2", "Vertical 2", choices = c("poison", "flying", "bug")),
-           selectInput("hint2_3", "Vertical 3", choices = c("poison", "flying", "bug"))
+           selectInput("hint2_1", "Vertical 1", choices = hint_options),
+           selectInput("hint2_2", "Vertical 2", choices = hint_options),
+           selectInput("hint2_3", "Vertical 3", choices = hint_options)
     ),
+    
+    # Right side: horizontal hints + image grid
     column(10,
+           # Horizontal hints (top row)
            fluidRow(
-             column(4, selectInput("hint1_1", "Horizontal 1", choices = c("ground", "fire", "bug"))),
-             column(4, selectInput("hint1_2", "Horizontal 2", choices = c("grass", "fire", "water"))),
-             column(4, selectInput("hint1_3", "Horizontal 3", choices = c("grass", "fire", "water")))
+             column(4, selectInput("hint1_1", "Horizontal 1", choices = hint_options)),
+             column(4, selectInput("hint1_2", "Horizontal 2", choices = hint_options)),
+             column(4, selectInput("hint1_3", "Horizontal 3", choices = hint_options))
            ),
            br(),
+           
+           # Grid of outputs (images)
            fluidRow(
              lapply(1:3, function(i) {
-               column(4, 
+               column(4,
                       lapply(1:3, function(j) {
                         uiOutput(paste0("img_", i, "_", j))
                       })
