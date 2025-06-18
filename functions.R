@@ -10,7 +10,7 @@ library(stringr)
 library(tidyr)
 library(future)
 
-## PRE-DEFINED VARIABLES AND VECTORS
+## PRE-DEFINED LISTS OF POKÉMON
 
 fossil_pokemon <- c(
   "omanyte", "omastar", "kabuto", "kabutops", "aerodactyl", "aerodactyl-mega",
@@ -46,6 +46,45 @@ hisuian_pokemon <- c(
   "enamorus-therian",
   "palkia-origin",
   "dialga-origin"
+)
+
+ultrabeasts <- c(
+  "nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela",
+  "kartana", "guzzlord", "poipole", "naganadel", "stakataka",
+  "blacephalon"
+)
+
+
+starters <- c(
+  # Gen 1
+  "bulbasaur", "charmander", "squirtle", "pikachu", "eevee",
+  # Gen 2
+  "chikorita", "cyndaquil", "totodile",
+  # Gen 3
+  "treecko", "torchic", "mudkip",
+  # Gen 4
+  "turtwig", "chimchar", "piplup",
+  # Gen 5
+  "snivy", "tepig", "oshawott",
+  # Gen 6
+  "chespin", "fennekin", "froakie",
+  # Gen 7
+  "rowlet", "litten", "popplio",
+  # Gen 8
+  "grookey", "scorbunny", "sobble",
+  # Gen 9
+  "sprigatito", "fuecoco", "quaxly"
+)
+
+
+paradoxes <- c(
+  # Scarlet (Past forms)
+  "great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", 
+  "sandy-shocks", "roaring-moon", "raging-bolt","koraidon","walking-wake","gouging-fire",
+  
+  # Violet (Future forms)
+  "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", 
+  "iron-thorns", "iron-valiant", "iron-leaves","miraidon","iron-boulder","iron-crown"
 )
 
 
@@ -98,6 +137,9 @@ catch_pokemon <- function(name) {
       Mythical = species_data$is_mythical,
       Baby = species_data$is_baby,
       Fossil = ifelse(tolower(name) %in% fossil_pokemon, TRUE, FALSE),
+      Ultra_beast = ifelse(tolower(name) %in% ultrabeasts, TRUE, FALSE),
+      Paradox = ifelse(tolower(name) %in% paradoxes, TRUE, FALSE),
+      First_partner = ifelse(tolower(name) %in% starters, TRUE, FALSE),
       Mega = grepl("-mega", tolower(name)),
       Gmax = grepl("-gmax", tolower(name)),
       Mono_type = is.na(Type2),
