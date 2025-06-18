@@ -51,18 +51,24 @@ ui <- fluidPage(
   fluidRow(
     # Left column: vertical hints
     column(2,
-           selectInput("hint2_1", "Vertical 1", choices = hint_options),
-           selectInput("hint2_2", "Vertical 2", choices = hint_options),
-           selectInput("hint2_3", "Vertical 3", choices = hint_options)
+           div(
+            selectInput("hint2_1", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = ""),
+            style = "margin-bottom: 130px; margin-top: 145px;"
+           ), 
+           div(
+            selectInput("hint2_2", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = ""),
+            style = "margin-bottom: 130px;"
+           ), 
+            selectInput("hint2_3", "", choices = c("Enter hint" = "", str_to_title(hint_options)), selected = "")
     ),
     
     # Right side: horizontal hints + image grid
     column(10,
            # Horizontal hints (top row)
            fluidRow(
-             column(4, selectInput("hint1_1", "Horizontal 1", choices = hint_options)),
-             column(4, selectInput("hint1_2", "Horizontal 2", choices = hint_options)),
-             column(4, selectInput("hint1_3", "Horizontal 3", choices = hint_options))
+             column(4, selectInput("hint1_1", "", choices = c("Enter hint" = "", str_to_title(hint_options))), selected = ""),
+             column(4, selectInput("hint1_2", "", choices = c("Enter hint" = "", str_to_title(hint_options))), selected = ""),
+             column(4, selectInput("hint1_3", "", choices = c("Enter hint" = "", str_to_title(hint_options))), selected = "")
            ),
            br(),
            
@@ -81,8 +87,10 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
-  all_poke_file <- "../all_poke_df_v3.csv"
+  all_poke_file <- "../all_poke_df_v4.csv"
   default_img <- "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
+  
+  show_tooltips <- reactiveVal(FALSE)
   
   grid_images <- reactiveVal(matrix(default_img, nrow = 3, ncol = 3))
   sprite_options <- reactiveVal(vector("list", 9))
@@ -95,6 +103,18 @@ server <- function(input, output, session) {
     
     hint_columns <- c(input$hint2_1, input$hint2_2, input$hint2_3)
     hint_rows <- c(input$hint1_1, input$hint1_2, input$hint1_3)
+    
+    show_tooltips(TRUE)
+    
+    if (any(hint_columns == "") || any(hint_rows == "")) {
+      showModal(modalDialog(
+        title = "Missing Input",
+        "Please select all row and column hints before solving.",
+        easyClose = TRUE
+      ))
+      return()
+    }
+    
     result <- solve_pokedoku(all_poke_file, hint_columns, hint_rows)
     
     k <- 1
@@ -131,18 +151,22 @@ server <- function(input, output, session) {
           name_list <- sprite_names()[[k]]
           name <- if (!is.null(name_list) && length(name_list) > 0) name_list[1] else "No valid Pokémon"
           
+          tooltip_html <- if (show_tooltips() && name != "") {
+            sprintf('<div class="tooltip-container">
+               <img src="%s" width="180px" height="180px" style="margin: 5px;">
+               <div class="tooltip-text">%s</div>
+             </div>', sprite, name)
+          } else {
+            sprintf('<img src="%s" width="180px" height="180px" style="margin: 5px;">', sprite)
+          }
+          
           actionButton(
             inputId = button_id,
-            label = HTML(sprintf(
-              '<div class="tooltip-container">
-                 <img src="%s" width="180px" height="180px" style="margin: 5px;">
-                 <div class="tooltip-text">%s</div>
-               </div>',
-              sprite, name
-            )),
+            label = HTML(tooltip_html),
             style = "padding: 0; border: none; background: none;"
           )
         })
+        
         
         observeEvent(input[[button_id]], {
           k <- (ii - 1) * 3 + jj
@@ -163,7 +187,7 @@ server <- function(input, output, session) {
                     inputId = select_id,
                     label = HTML(sprintf(
                       '<div class="tooltip-container">
-                         <img src="%s" width="100px" height="100px">
+                         <img src="%s" width="80px" height="80px">
                          <div class="tooltip-text">%s</div>
                        </div>',
                       options[idx], name
