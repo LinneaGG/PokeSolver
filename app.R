@@ -1,8 +1,8 @@
 library(shiny)
 library(shinythemes)
 
-source("../functions.R")
-all_poke_file <- "../all_poke_df_v4.csv"
+source("functions.R")
+all_poke_file <- "all_poke_df_v4.csv"
 all_poke_original <- read.csv(all_poke_file)
 
 hint_options <- c(
