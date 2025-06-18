@@ -56,19 +56,17 @@ ui <- fluidPage(
     tags$img(src = "logo_pokesolver.png",
              height = "130px", style = "margin-left: 10px;"),
     
-    tags$h1("PokeDoku Solver", 
+    tags$h1("PokéDoku Solver", 
             style = "flex-grow: 1; font-family: 'Jersey 10', sans-serif; font-size: 72px; 
                   font-weight: 500; color: white; text-align: center; margin: 0 20px;")
   )
   ,
-  
   
   actionButton("go", "Solve!", class = "btn btn-danger btn-lg", 
                style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 44px"),
 
   actionButton("randomize", "Randomize hints", class = "btn btn-secondary", 
                style = "margin-top: 30px; margin-left: 60px;"),
-  
   
   fluidRow(
     # Left column: vertical hints
@@ -137,7 +135,6 @@ server <- function(input, output, session) {
     updateSelectInput(session, "hint2_2", selected = str_to_title(random_hints[5]))
     updateSelectInput(session, "hint2_3", selected = str_to_title(random_hints[6]))
   })
-  
   
   observeEvent(input$go, {
     new_grid <- matrix(default_img, nrow = 3, ncol = 3)
@@ -209,7 +206,6 @@ server <- function(input, output, session) {
             style = "padding: 0; border: none; background: none;"
           )
         })
-        
         
         observeEvent(input[[button_id]], {
           k <- (ii - 1) * 3 + jj
