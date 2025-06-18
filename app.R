@@ -22,25 +22,6 @@ ui <- fluidPage(
     tags$link(href = "https://fonts.googleapis.com/css2?family=Jersey+10&display=swap", 
               rel = "stylesheet"),
     tags$style(HTML("
-      h2 {
-        font-family: 'Jersey 10', sans-serif;
-        font-size: 75px;
-        font-weight: 500;
-        color: #333;
-      }
-      
-      /* Colored header block */
-      #header-block {
-        background-color: #b50214;
-        padding: 20px 0;
-        text-align: center;
-        color: white;
-        font-family: 'Jersey 10', sans-serif;
-        font-size: 48px;
-        font-weight: normal;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      }
-    
       .tooltip-container {
         position: relative;
         display: inline-block;
@@ -69,8 +50,21 @@ ui <- fluidPage(
   # Audio element (hidden)
   tags$audio(id = "clickSound", src = "pikachu-starter.mp3", type = "audio/mp3", preload = "auto"),
   
-  #titlePanel("PokeDoku Solver"),
-  div(id = "header-block", "PokeDoku Solver"),
+  div(
+    style = "background-color: #b50214; padding: 2px; margin-bottom: 2px;",
+    fluidRow(
+      column(2,
+             tags$img(src = "logo_pokesolver.png",
+                      height = "180px", style = "margin-left: 10px;")
+      ),
+      column(10,
+             tags$h1("PokeDoku Solver", 
+                     style = "font-family: 'Jersey 10', sans-serif; font-size: 64px; 
+                     font-weight: 500; margin-top: 60px; margin-left: 60px; color: white")
+      )
+    )
+  ),
+  
   
   actionButton("go", "Solve!", class = "btn btn-danger btn-lg", 
                style = "margin-top: 30px; margin-left: 30px; font-family: 'Jersey 10', sans-serif; font-size: 36px"),
